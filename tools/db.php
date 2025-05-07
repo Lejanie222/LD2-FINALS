@@ -1,10 +1,10 @@
 <?php
 function getDBConnection(){
 
-$host = 'switchyard.proxy.rlwy.net';
-$port = 17607;
+$host = 'centerbeam.proxy.rlwy.net';
+$port = 58911;
 $user = 'root';
-$password = 'TzYfrdBKhmUefTAVqmjeatqGWnNqGuwa';
+$password = 'qsXbIlyJpvXnBloDPAvQtvPgtIkeEmXC';
 $dbname = 'railway';
 
 // Create connection
