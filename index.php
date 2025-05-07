@@ -174,7 +174,7 @@ if($authenticated){
 </head>
 <body>
   <div class="login-container">
-    <h2>Log In to Café Noir</h2>
+    <h2>Register to Café Noir</h2>
     <form action="post" method="POST">
        <label for="fname">First Name</label>
        <input type="text" id="fname" name="fname" value="<?= $first_name; ?>" required placeholder="Enter your First Name">
