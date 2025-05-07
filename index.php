@@ -1,4 +1,4 @@
-    <?php
+<?php
 
 session_start();
 
@@ -189,12 +189,11 @@ if($authenticated){
         
       <button type="submit" id="lgnBtn">Register</button>
     <a href="./login.php">
-      <button type="button" id="lgnBtn" >Have an Account? Log In</button>
+      <button type="button" id="lgnBtn">Have an Account? Log In</button>
     </a>
       <p class="forgot-password"><a href="#">Forgot Password?</a></p>
     </form>
   </div>
-  <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
 
