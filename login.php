@@ -126,7 +126,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <body>
   <div class="login-container">
     <h2>Log In to Café Noir</h2>
-    <form action="post" method="POST">
+    <form method="POST">
       <label for="em-auth">Email Address:</label>
       <input type="email" id="em-auth" name="em-auth" value="<?= $email; ?>" required>
       <label for="pass-auth">Password:</label>
