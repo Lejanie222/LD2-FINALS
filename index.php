@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 session_start();
 
@@ -182,6 +182,10 @@ if($authenticated){
        <input type="text" id="Lname" name="Lname" value="<?= $last_name; ?>" required placeholder="Enter your Last Name">
        <label for="em">Email</label>
        <input type="email" id="em" name="em" value="<?= $email; ?>" required placeholder="Enter your Email">
+       <label for="pass">Password</label>
+       <input type="password" id="pass" name="pass" required placeholder="Enter your password">
+       <label for="Cpass">Confirm Password</label>
+       <input type="password" id="Cpass" name="Cpass" required placeholder="Enter your password">
         
       <button type="submit" id="lgnBtn">Register</button>
     <a href="./login.php">
