@@ -109,6 +109,7 @@
   <a href="#specials">Specials</a>
   <a href="#about">About Us</a>
   <a href="#contact">Contact</a>
+  <a href="./logout.php">Log Out</a>
 </nav>
 
 <div class="container">
