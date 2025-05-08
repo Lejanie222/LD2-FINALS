@@ -131,7 +131,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
       <input type="email" id="em-auth" name="em-auth" value="<?= $email; ?>" required>
       <label for="pass-auth">Password:</label>
       <input type="password" id="pass-auth" name="pass-auth" required>
-        
+        <p><?= $error; ?></p>
       <button type="submit" id="lgnBtn">Login</button>
     <a href="./index.php">
       <button type="button" id="lgnBtn" >Create an Account</button>
@@ -139,6 +139,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
       <p class="forgot-password"><a href="#">Forgot Password?</a></p>
     </form>
   </div>
-  <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
