@@ -102,7 +102,7 @@ IF($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 }
 if($authenticated){
-    header("Location: login.php");
+    header("Location: menu.php");
     exit();
 } else {
 ?>
