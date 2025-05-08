@@ -2,11 +2,6 @@
 
 session_start();
 
-// If the user is already authenticated, redirect them to the menu page
-if(isset($_SESSION["email"])){
-    header("location: ./menu.php");
-    exit;
-}
 
 $email = "";
 $error = "";
