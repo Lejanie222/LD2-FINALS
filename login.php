@@ -2,11 +2,11 @@
 
 session_start();
 
+// If the user is already authenticated, redirect them to the menu page
 if(isset($_SESSION["email"])){
     header("location: ./menu.php");
     exit;
 }
-
 
 $email = "";
 $error = "";
@@ -28,16 +28,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $statement->bind_param('s',$email);
         $statement->execute();
 
-
         $statement->bind_result($id, $first_name, $last_name, $stored_password, $createdAt);
-
-
-
-
         
-
         if($statement->fetch()){
-
             if(password_verify($password,$stored_password)){
                 $_SESSION["id"] = $id;
                 $_SESSION["first_name"] = $first_name;
@@ -47,12 +40,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 
                 header("location: ./menu.php");
                 exit;
+            } else {
+                $error = "Email or Password Invalid";
             }
+        } else {
+            $error = "Email or Password Invalid";
         }
-
+        
         $statement->close();
-
-        $error = "Email or Password Invalid";
     }
 }
 
